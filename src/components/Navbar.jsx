@@ -20,6 +20,10 @@ const NavBar = () => {
   } = useContext(SharedStateContext);
 
   useEffect(() => {
+    handleClick("home");
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
     //set screensize whenever size changes
     window.addEventListener("resize", handleResize);
@@ -45,7 +49,12 @@ const NavBar = () => {
             setActiveSidebar(true);
           }}
         />
-        <span className="flex flex-row items-center flex-grow justify-center ml-48 cursor-pointer">
+        <span
+          className="flex flex-row items-center flex-grow justify-center ml-48 cursor-pointer"
+          onClick={() => {
+            handleClick("home");
+          }}
+        >
           <HiOutlineGlobeAlt className="scale-150 animate-pulse mr-2" />
           <p className="text-black whitespace-nowrap">Happy Apples!</p>
         </span>
