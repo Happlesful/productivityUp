@@ -6,7 +6,14 @@ import { HiOutlineInformationCircle, HiOutlineGlobeAlt } from "react-icons/hi";
 import { LuBrainCircuit } from "react-icons/lu";
 import { MdWorkOutline } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
-import { About, Home, Inspiration, Productivity, Time } from "../pages";
+import {
+  About,
+  Home,
+  Inspiration,
+  Productivity,
+  Time,
+  Settings,
+} from "../pages";
 
 const NavBar = () => {
   const {
@@ -44,7 +51,7 @@ const NavBar = () => {
     <>
       <div className="flex flex-row bg-violet-100 items-center p-1">
         <FiMenu
-          className="scale-150 m-2 bg-opacity-40 bg-gray-400 rounded-sm cursor-pointer"
+          className="text-2xl m-2 bg-opacity-40 bg-gray-400 rounded-sm cursor-pointer"
           onClick={() => {
             setActiveSidebar(true);
           }}
@@ -112,7 +119,7 @@ const NavBar = () => {
         (console.log("PRODUCTIVITY!"), (<Productivity />))}
       {isClicked.time && (console.log("TIME!"), (<Time />))}
       {isClicked.about && (console.log("ABOUT!"), (<About />))}
-      {isClicked.settings && console.log("SETTINGS!")}
+      {isClicked.settings && (console.log("SETTINGS!"), (<Settings />))}
       {isClicked.search && console.log("SEARCH!")}
     </>
   );

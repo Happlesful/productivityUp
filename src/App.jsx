@@ -8,7 +8,14 @@ import {
   Sidebar,
   ThemeSettings,
 } from "./components";
-import { Home, About, Inspiration, Productivity, Time } from "./pages";
+import {
+  Home,
+  About,
+  Inspiration,
+  Productivity,
+  Time,
+  Settings,
+} from "./pages";
 import "./App.css";
 
 const App = () => {

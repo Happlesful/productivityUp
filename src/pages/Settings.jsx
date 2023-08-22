@@ -13,9 +13,12 @@ const Settings = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-center">
-        <ul className="flex flex-row">
-          <li className="p-2 flex flex-row items-center">
+      <div className="flex flex-col justify-center">
+        <span className="flex flex-row bg-settings w-screen h-14 text-lg font-bold underline decoration-2 justify-center items-center">
+          Settings
+        </span>
+        <ul className="flex flex-col py-5 px-10">
+          <li className="p-2 flex flex-row items-center justify-center">
             {isDarkMode ? (
               <>
                 <p>Switch to Dark Mode</p>

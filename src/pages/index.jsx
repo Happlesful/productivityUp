@@ -6,3 +6,4 @@ export { default as About } from "./About";
 export { default as Productivity } from "./Productivity";
 export { default as Inspiration } from "./Inspiration";
 export { default as Time } from "./Time";
+export { default as Settings } from "./Settings";

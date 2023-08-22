@@ -42,6 +42,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("home");
+                      setActiveSidebar(false);
                     }}
                   >
                     <BiHomeAlt2 className="mr-2" /> Home
@@ -57,6 +58,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("inspiration");
+                      setActiveSidebar(false);
                     }}
                   >
                     <LuBrainCircuit className="mr-2" /> Inspiration
@@ -72,6 +74,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("productivity");
+                      setActiveSidebar(false);
                     }}
                   >
                     <MdWorkOutline className="mr-2" /> Productivity
@@ -87,6 +90,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("time");
+                      setActiveSidebar(false);
                     }}
                   >
                     <FiClock className="mr-2" /> Clock
@@ -102,6 +106,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("about");
+                      setActiveSidebar(false);
                     }}
                   >
                     <HiOutlineInformationCircle className="mr-2" /> About
@@ -117,6 +122,7 @@ const Sidebar = () => {
                     className="flex flex-row items-center"
                     onClick={() => {
                       handleClick("settings");
+                      setActiveSidebar(false);
                     }}
                   >
                     <FiSettings className="mr-2" /> Settings

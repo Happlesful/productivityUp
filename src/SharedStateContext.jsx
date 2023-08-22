@@ -16,6 +16,7 @@ const SharedStateProvider = ({ children }) => {
   const [activeSidebar, setActiveSidebar] = useState(false);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleClick = (click) => {
     setIsClicked({ ...initialState, [click]: true });
@@ -29,6 +30,8 @@ const SharedStateProvider = ({ children }) => {
     screenSize,
     setScreenSize,
     handleClick,
+    isDarkMode,
+    setIsDarkMode,
   };
 
   return (

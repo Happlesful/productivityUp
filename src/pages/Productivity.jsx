@@ -1,11 +1,34 @@
 import React from "react";
+import { SparkLine } from "../charts";
 
 const Productivity = () => {
+  const data = [
+    { x: 1, y: 10 },
+    { x: 2, y: 15 },
+    { x: 3, y: 8 },
+    { x: 4, y: 12 },
+    { x: 5, y: 18 },
+    { x: 6, y: 14 },
+    { x: 7, y: 9 },
+    { x: 8, y: 11 },
+    { x: 9, y: 13 },
+    { x: 10, y: 16 },
+  ];
+
   return (
     <div className="py-5 px-10">
       <p className="text-lg font-bold underline decoration-2 mb-4">
         Productivity
       </p>
+      {/* <SparkLine
+        currentColor="blue"
+        id="line-sparkline"
+        type="Line"
+        height="80px"
+        width="250px"
+        data={data}
+        color="blue"
+      /> */}
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut
       eligendi hic aperiam quisquam ullam aliquid architecto repellat nihil
       aspernatur ad, est laudantium, ipsa pariatur non velit veritatis

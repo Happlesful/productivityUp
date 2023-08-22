@@ -20,6 +20,13 @@ body {
   }
 }
 
+@layer pages {
+  .bg-settings {
+    background-image: url("./images/SettingsBG.jpg");
+    @apply bg-center bg-cover bg-no-repeat;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
